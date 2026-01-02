@@ -1,0 +1,173 @@
+/*******************************************************
+* DatePicker
+*******************************************************/
+  .datepicker table tr td.disabled,
+  .datepicker table tr td.disabled:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #dddddd;
+    cursor: default;
+  }
+
+.dropdown-toggle::after {
+    content: "";
+    border: 0;
+}
+
+/*******************************************************
+* Magic-Checkbox
+*******************************************************/
+  .magic-checkbox + label::before {
+      border-radius: 0px;
+  }
+  .magic-checkbox + label::before, .magic-radio + label::before {
+      height: 17px;
+      width: 17px;
+  }
+  .magic-checkbox + label::after {
+      left: 6px;
+      top: 1px;
+  }
+  .magic-checkbox + label, .magic-radio + label {
+      padding-left: 25px;
+  }
+
+
+/*******************************************************
+* bootstrapTable
+*******************************************************/
+  .btt-icons {
+    text-align: center;
+  }
+  .btt-icons > a {
+    margin: 0 5px;
+  }
+  .btt-icons i.fa,
+  .btt-icons span.glyphicon,
+  .btt-icons .fa {
+    font-size: 1.3em;
+    color: #428bca;
+  }
+  .btt-icons i.fa:hover,
+  .btt-icons span.glyphicon:hover {
+    color: #2A6496;
+  }
+
+  .bootstrap-table .fixed-table-container {
+    background: #fff none repeat scroll 0 0;
+  }
+  .bootstrap-table .fixed-table-toolbar .bars{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .bootstrap-table .fixed-table-toolbar .bars .btn-group{
+    display: block;
+    margin-top: 5px;
+  }
+
+  .bootstrap-table .date_range {
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    margin-top: 2px;
+    top: 12px;
+    width: 225px;
+  }
+
+  .btt-toolbar{
+    float: left;
+  }
+
+  .btt-toolbar select{
+    display: inline-block;
+    max-width: 250px;
+    min-width: 75px;
+    width: auto;
+  }
+
+  .btt-toolbar .btn-group{
+    display: inline-block !important;
+    position: relative;
+    top: -4px;
+  }
+
+  .btt-toolbar select {
+      background-color: #ffffff;
+      border: 1px solid #e3e3e3;
+      box-shadow: none;
+      color: #565656;
+      display: inline-block;
+      height: 35px;
+      margin-top: -1px;
+      max-width: 100%;
+      padding: 7px 12px;
+      transition: all 300ms linear 0s;
+  }
+  .bootstrap-table .dropdown-menu label{
+    font-size: .8em;
+  }
+
+  .btt-toolbar .select2-container {
+    display: inline-block;
+    width: auto !important;
+    max-width: 225px !important;
+  }
+
+  @media (max-width: 585px) {
+    .btt-toolbar a.add{
+      font-size: 0;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    .btt-toolbar a.add::before {
+      content: "\f067";
+        font-size: 10px;
+      font: normal normal normal 14px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .btt-toolbar select {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .bootstrap-table .columns-right,
+    .bootstrap-table .search{
+      margin-top: 0;
+    }
+
+    .pull-right.search {
+        width: 45%;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .pull-right.search {
+        width: 150px;
+    }
+  }
+
+
+/*******************************************************
+* Tab Backgroud
+*******************************************************/
+  .tab-base .tab-content{
+    background: none;
+    border: 2px solid #f8f8f8;
+        border-top-color: rgb(248, 248, 248);
+        border-top-style: solid;
+        border-top-width: 2px;
+    border-top: 3px solid #fff;
+  }
+
+
+/*******************************************************
+* table-nifty
+*******************************************************/
+  .table-nifty th{
+    padding: 8px !important;
+  }
+
+
+

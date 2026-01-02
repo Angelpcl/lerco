@@ -1,0 +1,2261 @@
+[13-Jan-2025 16:09:27 America/Mexico_City] An Error occurred while handling another error:
+yii\base\InvalidArgumentException: The file or directory to be published does not exist: /home/wwlerc/tickets.lercomx.com/vendor/bower-asset/magic-check/css in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetManager.php:476
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetBundle.php(181): yii\web\AssetManager->publish('/home/wwlerc/ti...', Array)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetManager.php(294): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetManager.php(265): yii\web\AssetManager->loadBundle('app\\assets\\Magi...', Array, true)
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/View.php(301): yii\web\AssetManager->getBundle('app\\assets\\Magi...')
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/View.php(306): yii\web\View->registerAssetBundle('app\\assets\\Magi...', NULL)
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/View.php(306): yii\web\View->registerAssetBundle('app\\assets\\Nift...', NULL)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(14): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#10 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#14 [internal function]: yii\web\ErrorAction->run()
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#16 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#17 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#18 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#19 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#20 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#21 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request: site/login in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página no encontrada. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'PHPSESSID=3295af1ad428186d8d1313f6d5b214c8',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'REDIRECT_UNIQUE_ID' => 'Z4WPF1t3xiXonY1vfFOwLQAAAYU',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4WPF1t3xiXonY1vfFOwLQAAAYU',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '189.165.64.162',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '50367',
+    'REDIRECT_URL' => '/web/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736806167.303081989288330078125,
+    'REQUEST_TIME' => 1736806167,
+    'argv' => [],
+    'argc' => 0,
+]
+[13-Jan-2025 16:11:05 America/Mexico_City] An Error occurred while handling another error:
+yii\base\InvalidArgumentException: The file or directory to be published does not exist: /home/wwlerc/tickets.lercomx.com/vendor/bower-asset/magic-check/css in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetManager.php:476
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetBundle.php(181): yii\web\AssetManager->publish('/home/wwlerc/ti...', Array)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetManager.php(294): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetManager.php(265): yii\web\AssetManager->loadBundle('app\\assets\\Magi...', Array, true)
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/View.php(301): yii\web\AssetManager->getBundle('app\\assets\\Magi...')
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/View.php(306): yii\web\View->registerAssetBundle('app\\assets\\Magi...', NULL)
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/View.php(306): yii\web\View->registerAssetBundle('app\\assets\\Nift...', NULL)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(14): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#10 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#14 [internal function]: yii\web\ErrorAction->run()
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#16 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#17 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#18 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#19 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#20 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#21 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request: site/login in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página no encontrada. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'PHPSESSID=3295af1ad428186d8d1313f6d5b214c8',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4WPeMEFqeZnLpwj6hWDTgAAAUU',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4WPeMEFqeZnLpwj6hWDTgAAAUU',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '189.165.64.162',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '50417',
+    'REDIRECT_URL' => '/web/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736806265.475452899932861328125,
+    'REQUEST_TIME' => 1736806265,
+    'argv' => [],
+    'argc' => 0,
+]
+[13-Jan-2025 16:16:48 America/Mexico_City] An Error occurred while handling another error:
+yii\base\InvalidArgumentException: The file or directory to be published does not exist: /home/wwlerc/tickets.lercomx.com/vendor/bower-asset/magic-check/css in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetManager.php:476
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetBundle.php(181): yii\web\AssetManager->publish('/home/wwlerc/ti...', Array)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetManager.php(294): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetManager.php(265): yii\web\AssetManager->loadBundle('app\\assets\\Magi...', Array, true)
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/View.php(301): yii\web\AssetManager->getBundle('app\\assets\\Magi...')
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/View.php(306): yii\web\View->registerAssetBundle('app\\assets\\Magi...', NULL)
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/View.php(306): yii\web\View->registerAssetBundle('app\\assets\\Nift...', NULL)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(14): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#10 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#14 [internal function]: yii\web\ErrorAction->run()
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#16 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#17 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#18 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#19 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#20 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#21 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request: site/login in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página no encontrada. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'PHPSESSID=3295af1ad428186d8d1313f6d5b214c8',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4WQz1t3xiXonY1vfFOwTAAAAYg',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4WQz1t3xiXonY1vfFOwTAAAAYg',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '189.165.64.162',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '50589',
+    'REDIRECT_URL' => '/web/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736806608.3054950237274169921875,
+    'REQUEST_TIME' => 1736806608,
+    'argv' => [],
+    'argc' => 0,
+]
+[14-Jan-2025 11:39:37 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'PHPSESSID=c4b5a797d334f9bf5cdba9d543ff5ab2; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=f64ed080a356d12a5c2b6ead112a84bc634cdd6df3d0998e8443e2a4cf11512da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jBLEwZoaBapJIPPBpf4d5wgLlMkCZxG_%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA' => '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4ahWYWtmzVaxWSoUdMDegAAAFM',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4ahWYWtmzVaxWSoUdMDegAAAFM',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '63184',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736876377.861710071563720703125,
+    'REQUEST_TIME' => 1736876377,
+    'argv' => [],
+    'argc' => 0,
+]
+[14-Jan-2025 11:39:46 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'PHPSESSID=c4b5a797d334f9bf5cdba9d543ff5ab2; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=f64ed080a356d12a5c2b6ead112a84bc634cdd6df3d0998e8443e2a4cf11512da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jBLEwZoaBapJIPPBpf4d5wgLlMkCZxG_%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA' => '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4ahYhJEaWabw4wCzsoI4wAAABQ',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4ahYhJEaWabw4wCzsoI4wAAABQ',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '63189',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736876386.6249129772186279296875,
+    'REQUEST_TIME' => 1736876386,
+    'argv' => [],
+    'argc' => 0,
+]
+[14-Jan-2025 11:40:53 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'PHPSESSID=c4b5a797d334f9bf5cdba9d543ff5ab2; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=f64ed080a356d12a5c2b6ead112a84bc634cdd6df3d0998e8443e2a4cf11512da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jBLEwZoaBapJIPPBpf4d5wgLlMkCZxG_%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA' => '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4ahpabayBKUkUoANTLjywAAARE',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4ahpabayBKUkUoANTLjywAAARE',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '63211',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736876453.7217390537261962890625,
+    'REQUEST_TIME' => 1736876453,
+    'argv' => [],
+    'argc' => 0,
+]
+[14-Jan-2025 11:45:15 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_REFERER' => 'https://tickets.lercomx.com/web/admin/user/update?id=138',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4aiq4WtmzVaxWSoUdMD8AAAAEU',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4aiq4WtmzVaxWSoUdMD8AAAAEU',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '61821',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736876715.188107967376708984375,
+    'REQUEST_TIME' => 1736876715,
+    'argv' => [],
+    'argc' => 0,
+]
+[14-Jan-2025 11:45:19 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#17 {main}
+Previous exception:
+yii\web\NotFoundHttpException: El perfil de este usuario no te permite editarlo. in /home/wwlerc/tickets.lercomx.com/modules/admin/controllers/UserController.php:131
+Stack trace:
+#0 [internal function]: app\modules\admin\controllers\UserController->actionUpdate('138')
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/upda...', Array)
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_REFERER' => 'https://tickets.lercomx.com/web/admin/user/view?id=138',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4air_ypGUIU4V0vMHcFwgAAAMI',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4air_ypGUIU4V0vMHcFwgAAAMI',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '61820',
+    'REDIRECT_URL' => '/web/admin/user/update',
+    'REDIRECT_QUERY_STRING' => 'id=138',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=138',
+    'REQUEST_URI' => '/web/admin/user/update?id=138',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736876719.5059320926666259765625,
+    'REQUEST_TIME' => 1736876719,
+    'argv' => [
+        'id=138',
+    ],
+    'argc' => 1,
+]
+[14-Jan-2025 11:52:11 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#17 {main}
+Previous exception:
+yii\web\NotFoundHttpException: El perfil de este usuario no te permite editarlo. in /home/wwlerc/tickets.lercomx.com/modules/admin/controllers/UserController.php:131
+Stack trace:
+#0 [internal function]: app\modules\admin\controllers\UserController->actionUpdate('138')
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/upda...', Array)
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_REFERER' => 'https://tickets.lercomx.com/web/admin/user/view?id=138',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4akSvypGUIU4V0vMHcGFAAAANM',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4akSvypGUIU4V0vMHcGFAAAANM',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '62084',
+    'REDIRECT_URL' => '/web/admin/user/update',
+    'REDIRECT_QUERY_STRING' => 'id=138',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=138',
+    'REQUEST_URI' => '/web/admin/user/update?id=138',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736877130.927278995513916015625,
+    'REQUEST_TIME' => 1736877130,
+    'argv' => [
+        'id=138',
+    ],
+    'argc' => 1,
+]
+[14-Jan-2025 11:52:29 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4akXejeKAc4vJkYZ9cbOgAAAIo',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4akXejeKAc4vJkYZ9cbOgAAAIo',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '62092',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736877149.3600890636444091796875,
+    'REQUEST_TIME' => 1736877149,
+    'argv' => [],
+    'argc' => 0,
+]
+[14-Jan-2025 11:52:37 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\MethodNotAllowedHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\MethodNotAllowedHttpException))
+#17 {main}
+Previous exception:
+yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('logout', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logo...', Array)
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#9 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4akZYWtmzVaxWSoUdMEHwAAAEk',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4akZYWtmzVaxWSoUdMEHwAAAEk',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '62096',
+    'REDIRECT_URL' => '/web/admin/user/logout',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/logout',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736877157.208240985870361328125,
+    'REQUEST_TIME' => 1736877157,
+    'argv' => [],
+    'argc' => 0,
+]
+[14-Jan-2025 11:52:39 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\MethodNotAllowedHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\MethodNotAllowedHttpException))
+#17 {main}
+Previous exception:
+yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('logout', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logo...', Array)
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#9 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4akZ_ypGUIU4V0vMHcGGwAAAMo',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4akZ_ypGUIU4V0vMHcGGwAAAMo',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '62097',
+    'REDIRECT_URL' => '/web/admin/user/logout',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/logout',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736877159.61657810211181640625,
+    'REQUEST_TIME' => 1736877159,
+    'argv' => [],
+    'argc' => 0,
+]
+[14-Jan-2025 11:52:42 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\MethodNotAllowedHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\MethodNotAllowedHttpException))
+#17 {main}
+Previous exception:
+yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('logout', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logo...', Array)
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#9 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4akaujeKAc4vJkYZ9cbOwAAAI8',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4akaujeKAc4vJkYZ9cbOwAAAI8',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '62101',
+    'REDIRECT_URL' => '/web/admin/user/logout',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/logout',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736877162.5488369464874267578125,
+    'REQUEST_TIME' => 1736877162,
+    'argv' => [],
+    'argc' => 0,
+]
+[14-Jan-2025 11:53:41 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4akpabayBKUkUoANTLkLwAAARc',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4akpabayBKUkUoANTLkLwAAARc',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '62125',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736877221.76848506927490234375,
+    'REQUEST_TIME' => 1736877221,
+    'argv' => [],
+    'argc' => 0,
+]
+[14-Jan-2025 11:53:47 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#17 {main}
+Previous exception:
+yii\web\NotFoundHttpException: El perfil de este usuario no te permite editarlo. in /home/wwlerc/tickets.lercomx.com/modules/admin/controllers/UserController.php:131
+Stack trace:
+#0 [internal function]: app\modules\admin\controllers\UserController->actionUpdate('138')
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/upda...', Array)
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_REFERER' => 'https://tickets.lercomx.com/web/admin/user/view?id=138',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4akq4WtmzVaxWSoUdMELgAAAE4',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4akq4WtmzVaxWSoUdMELgAAAE4',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '62132',
+    'REDIRECT_URL' => '/web/admin/user/update',
+    'REDIRECT_QUERY_STRING' => 'id=138',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=138',
+    'REQUEST_URI' => '/web/admin/user/update?id=138',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736877227.08961391448974609375,
+    'REQUEST_TIME' => 1736877227,
+    'argv' => [
+        'id=138',
+    ],
+    'argc' => 1,
+]
+[14-Jan-2025 11:56:02 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#17 {main}
+Previous exception:
+yii\web\NotFoundHttpException: El perfil de este usuario no te permite editarlo. in /home/wwlerc/tickets.lercomx.com/modules/admin/controllers/UserController.php:131
+Stack trace:
+#0 [internal function]: app\modules\admin\controllers\UserController->actionUpdate('138')
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/upda...', Array)
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_REFERER' => 'https://tickets.lercomx.com/web/admin/user/view?id=138',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4alMvypGUIU4V0vMHcGLAAAANA',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4alMvypGUIU4V0vMHcGLAAAANA',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '62187',
+    'REDIRECT_URL' => '/web/admin/user/update',
+    'REDIRECT_QUERY_STRING' => 'id=138',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=138',
+    'REQUEST_URI' => '/web/admin/user/update?id=138',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736877362.2679460048675537109375,
+    'REQUEST_TIME' => 1736877362,
+    'argv' => [
+        'id=138',
+    ],
+    'argc' => 1,
+]
+[14-Jan-2025 11:56:26 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#17 {main}
+Previous exception:
+yii\web\NotFoundHttpException: El perfil de este usuario no te permite editarlo. in /home/wwlerc/tickets.lercomx.com/modules/admin/controllers/UserController.php:131
+Stack trace:
+#0 [internal function]: app\modules\admin\controllers\UserController->actionUpdate('138')
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/upda...', Array)
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_REFERER' => 'https://tickets.lercomx.com/web/admin/user/view?id=138',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4alSqbayBKUkUoANTLkNAAAAQ4',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4alSqbayBKUkUoANTLkNAAAAQ4',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '62195',
+    'REDIRECT_URL' => '/web/admin/user/update',
+    'REDIRECT_QUERY_STRING' => 'id=138',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=138',
+    'REQUEST_URI' => '/web/admin/user/update?id=138',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736877386.53559398651123046875,
+    'REQUEST_TIME' => 1736877386,
+    'argv' => [
+        'id=138',
+    ],
+    'argc' => 1,
+]
+[14-Jan-2025 11:57:22 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(684): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'ES-bootstrap-table-usuario.bs.table.cardView=false; ES-bootstrap-table-tickets.bs.table.cardView=false; PHPSESSID=b5dafa7eae8b515928225d1023f575bd; _identity=a531af8b716299b5fe3803cca6325538cf1fccfe211d67ce13de32bcacc96273a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B138%2C%22RoPI0jA8lyglyHmPFSuZS8lxbGZZiCsM%22%2C2592000%5D%22%3B%7D; _csrf=edd24690af56fade1b0c1ef32547cfb7b706cca3d40a67360b7abb53db031ad3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229iInnaT_4wcaL-cwqYkssq-wEfFsodeQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_REFERER' => 'https://tickets.lercomx.com/web/operacion/ticket/create',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z4algqbayBKUkUoANTLkOAAAARg',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z4algqbayBKUkUoANTLkOAAAARg',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.194.141.249',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '62249',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1736877442.6349089145660400390625,
+    'REQUEST_TIME' => 1736877442,
+    'argv' => [],
+    'argc' => 0,
+]
+[22-Jan-2025 12:41:55 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(694): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'PHPSESSID=7853129b8bb5f5dac3f1c6f0ca47c76f; _identity=21ce46466776b48191ae5cb25469e4db5dc48905d4405807c9a2d9898c334452a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B139%2C%22bghZ2klkce0D7Td2Z0cRNMZfunnj78Xn%22%2C2592000%5D%22%3B%7D; _csrf=8b30f4f48a2fbe1652675d8c882333508747b11c8e291dc59bb8ffff02216d16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fsWpcggEUbmisrmp45nVK526HYofAz_M%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA' => '"Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z5E783wrR3P2oDoIv1BgZgAAAEE',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z5E783wrR3P2oDoIv1BgZgAAAEE',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.188.17.157',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '54139',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1737571315.185902118682861328125,
+    'REQUEST_TIME' => 1737571315,
+    'argv' => [],
+    'argc' => 0,
+]
+[22-Jan-2025 12:42:01 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(694): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'PHPSESSID=7853129b8bb5f5dac3f1c6f0ca47c76f; _identity=21ce46466776b48191ae5cb25469e4db5dc48905d4405807c9a2d9898c334452a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B139%2C%22bghZ2klkce0D7Td2Z0cRNMZfunnj78Xn%22%2C2592000%5D%22%3B%7D; _csrf=8b30f4f48a2fbe1652675d8c882333508747b11c8e291dc59bb8ffff02216d16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fsWpcggEUbmisrmp45nVK526HYofAz_M%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA' => '"Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_PURPOSE' => 'prefetch;prerender',
+    'HTTP_PURPOSE' => 'prefetch',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z5E7-V7l_ZT_j5lPDzaE6AAAAQc',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z5E7-V7l_ZT_j5lPDzaE6AAAAQc',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.188.17.157',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '65423',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1737571321.600100040435791015625,
+    'REQUEST_TIME' => 1737571321,
+    'argv' => [],
+    'argc' => 0,
+]
+[22-Jan-2025 12:42:02 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(694): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'PHPSESSID=7853129b8bb5f5dac3f1c6f0ca47c76f; _identity=21ce46466776b48191ae5cb25469e4db5dc48905d4405807c9a2d9898c334452a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B139%2C%22bghZ2klkce0D7Td2Z0cRNMZfunnj78Xn%22%2C2592000%5D%22%3B%7D; _csrf=8b30f4f48a2fbe1652675d8c882333508747b11c8e291dc59bb8ffff02216d16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fsWpcggEUbmisrmp45nVK526HYofAz_M%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA' => '"Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z5E7-h2oOfpfqyXpqfGUbgAAAIw',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z5E7-h2oOfpfqyXpqfGUbgAAAIw',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.188.17.157',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '12839',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1737571322.0236790180206298828125,
+    'REQUEST_TIME' => 1737571322,
+    'argv' => [],
+    'argc' => 0,
+]
+[22-Jan-2025 14:03:43 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(694): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,es-ES;q=0.8,en;q=0.7,en-GB;q=0.6,en-US;q=0.5,es-MX;q=0.4',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'PHPSESSID=42c134b2dcf4ee610b4250d99ab408da; _identity=21ce46466776b48191ae5cb25469e4db5dc48905d4405807c9a2d9898c334452a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B139%2C%22bghZ2klkce0D7Td2Z0cRNMZfunnj78Xn%22%2C2592000%5D%22%3B%7D; _csrf=e2d496771b0b31eeda56e4a70f32185f9dff6c7fcb437c4bc7f630d36dd295d3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L4yGNnPq3wDoRDt4uGh9c9rn-BGcQGwQ%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Not A(Brand";v="8", "Chromium";v="132", "Microsoft Edge";v="132"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'cross-site',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z5FPH17l_ZT_j5lPDzaFowAAAQw',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z5FPH17l_ZT_j5lPDzaFowAAAQw',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.188.17.157',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '35793',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1737576223.836121082305908203125,
+    'REQUEST_TIME' => 1737576223,
+    'argv' => [],
+    'argc' => 0,
+]
+[23-Jan-2025 11:04:42 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(694): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,es-ES;q=0.8,en;q=0.7,en-GB;q=0.6,en-US;q=0.5,es-MX;q=0.4',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_identity=21ce46466776b48191ae5cb25469e4db5dc48905d4405807c9a2d9898c334452a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B139%2C%22bghZ2klkce0D7Td2Z0cRNMZfunnj78Xn%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Not A(Brand";v="8", "Chromium";v="132", "Microsoft Edge";v="132"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'cross-site',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z5J2qYSv_x5bLsvVdmfvlwAAAAY',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z5J2qYSv_x5bLsvVdmfvlwAAAAY',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.188.17.157',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '36482',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1737651882.4470360279083251953125,
+    'REQUEST_TIME' => 1737651882,
+    'argv' => [],
+    'argc' => 0,
+]
+[23-Jan-2025 11:05:24 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(694): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,es-ES;q=0.8,en;q=0.7,en-GB;q=0.6,en-US;q=0.5,es-MX;q=0.4',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_identity=21ce46466776b48191ae5cb25469e4db5dc48905d4405807c9a2d9898c334452a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B139%2C%22bghZ2klkce0D7Td2Z0cRNMZfunnj78Xn%22%2C2592000%5D%22%3B%7D; PHPSESSID=bf8c26b62023e9172544ab45c502dc77',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Not A(Brand";v="8", "Chromium";v="132", "Microsoft Edge";v="132"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'cross-site',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z5J204Sv_x5bLsvVdmfvmgAAAAM',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z5J204Sv_x5bLsvVdmfvmgAAAAM',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.188.17.157',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '4005',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1737651924.4945049285888671875,
+    'REQUEST_TIME' => 1737651924,
+    'argv' => [],
+    'argc' => 0,
+]
+[23-Jan-2025 11:05:47 America/Mexico_City] An Error occurred while handling another error:
+TypeError: Cannot access offset of type string on string in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, NULL)
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Widget.php(146): yii\widgets\Menu->run()
+#2 /home/wwlerc/tickets.lercomx.com/components/NiftyComponent.php(694): yii\base\Widget::widget(Array)
+#3 /home/wwlerc/tickets.lercomx.com/views/layouts/main.php(44): app\components\NiftyComponent->get_menu()
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(348): require('/home/wwlerc/ti...')
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/home/wwlerc/ti...', Array)
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/wwlerc/ti...', Array, Object(app\controllers\SiteController))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#10 [internal function]: yii\web\ErrorAction->run()
+#11 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#12 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#13 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#14 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#15 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#17 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: No tiene permitido ejecutar esta acción. in /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#9 /home/wwlerc/tickets.lercomx.com/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/wwlerc/tickets.lercomx.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd',
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,es-ES;q=0.8,en;q=0.7,en-GB;q=0.6,en-US;q=0.5,es-MX;q=0.4',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_identity=21ce46466776b48191ae5cb25469e4db5dc48905d4405807c9a2d9898c334452a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B139%2C%22bghZ2klkce0D7Td2Z0cRNMZfunnj78Xn%22%2C2592000%5D%22%3B%7D; PHPSESSID=bf8c26b62023e9172544ab45c502dc77',
+    'HTTP_HOST' => 'tickets.lercomx.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0',
+    'HTTP_SEC_CH_UA' => '"Not A(Brand";v="8", "Chromium";v="132", "Microsoft Edge";v="132"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'cross-site',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Z5J269xaMHzz8QZSVevqUwAAANA',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Z5J269xaMHzz8QZSVevqUwAAANA',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'tickets.lercomx.com',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'tickets.lercomx.com',
+    'SERVER_ADDR' => '162.240.109.18',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '187.188.17.157',
+    'DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwlerc/tickets.lercomx.com',
+    'SERVER_ADMIN' => 'webmaster@tickets.lercomx.com',
+    'SCRIPT_FILENAME' => '/home/wwlerc/tickets.lercomx.com/web/index.php',
+    'REMOTE_PORT' => '54273',
+    'REDIRECT_URL' => '/web/admin/user/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/web/admin/user/login',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1737651947.5094029903411865234375,
+    'REQUEST_TIME' => 1737651947,
+    'argv' => [],
+    'argc' => 0,
+]

@@ -1,0 +1,11 @@
+<?php
+$this->title = 'Crear país';
+$this->params['breadcrumbs'][] = 'Editar';
+$this->params['breadcrumbs'][] = ['label' => 'Zona roja', 'url' => ['index']];
+?>
+<div class="pagos-pago-create">
+    <?= $this->render('_form', [
+        'model' => $model,
+    ]) ?>
+
+</div>
